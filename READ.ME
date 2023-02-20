@@ -1,0 +1,32 @@
+# Robot Challenge
+
+The Robot Challenge processes the way in which the robots divide the chips amongst themselves, based on the instructions given.
+It tracks the order in which every chip is divided and registers where the are placed in the end.
+
+## Repository Overview
+├── src
+    ├── data
+        ├── Bot
+        ├── BotCommand
+        ├── BotTracker
+        ├── Destination
+        ├── Output
+        └── ValueCommand
+├── input
+    ├──instructions
+           └── inputBots.txt
+        ├── inputProcessor
+        └── inputReader
+    ├──InputExecutor
+
+### Project Implementation
+The input containing the instructions for the Bots on how to divide the chips is being read from the inputBots.txt file in the
+inputReader class.
+The information is separated in ValueCommands (how are the chips divided initially) and in BotCommands (thereafter,
+how do the Bots divide the chips amongst themselves).
+This information is stored in the BotTracker class, to be accessed and processed by the inputProcessor class.
+In order to process the information correctly, the inputProcessor uses several classes
+(Bot, Destination and Output).
+
+### Running Instructions
+the programme can be run by executing the main method in the InputExecutor class.
